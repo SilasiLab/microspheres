@@ -27,6 +27,7 @@ This script takes an image with the CSI camera attached to the Raspberry Pi on u
 2. $ cd ~
 3. $ cd microspheres
 4. inspect the imports of this script and pip install whatever you are missing
+5. make a folder on your desktop called pi_brain (you can call it something else or use a different path, but be sure to change the savepath in get_image.py)
 5. $ python get_image.py
 6. to take an image press spacebar
 
