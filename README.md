@@ -2,7 +2,7 @@
 Python scripts and hardware assembly instructions for reproducing microsphere experiments
 
 # General Info
-To conduct our experiment we used a Raspberry Pi v3 to do our imaging and Ubuntu 16.04LTS to do our data processing. The instructions for the setup of our hardware can be found below under Assembly, and the instructions for running our custom Python script for imaging can be found below under get_image.py instructions.
+To conduct our experiment we used a Raspberry Pi to do our imaging and Ubuntu 16.04LTS to do our data processing. The instructions for the setup of our hardware can be found below under Assembly, and the instructions for running our custom Python script for imaging can be found below under get_image.py instructions.
 
 After our imaging was complete we utilized a custom Python data processing script to map the microsphere locations in each mouses' brain to different regions as specified in the Allen Brain Atlas. The general usage of this custom script is explained below under localization.py instructions.
 
@@ -21,6 +21,8 @@ The dependencies for these scripts are very stable and different versions of the
 4. $ git clone https://github.com/silasilab/microspheres.git
 
 # get_image.py Instructions
+This script takes an image with the CSI camera attached to the Raspberry Pi on user input.
+
 1. press ctrl+alt+t to open a terminal window
 2. $ cd ~
 3. $ cd microspheres
