@@ -12,18 +12,19 @@ After our imaging was complete we utilized a custom Python data processing scrip
 1. make sure git is installed
 2. press ctrl+alt+t to open a terminal window
 3. $ cd ~
-3. $ git clone https://github.com/silasilab/microspheres.git
+4. $ git clone https://github.com/silasilab/microspheres.git
 
 # get_image.py Instructions
 1. press ctrl+alt+t to open a terminal window
 2. $ cd ~
-2. $ cd microspheres
-3. inspect the imports of this script and pip install whatever you are missing
-3. $ python get_image.py
-4. to take an image press spacebar
+3. $ cd microspheres
+4. inspect the imports of this script and pip install whatever you are missing
+5. $ python get_image.py
+6. to take an image press spacebar
 
 # localization.py Instructions
-1. $ cd ~
-2. open up localization.py in a text editor and change the variable named "base_dir" at the top of the file to point to where your input directory is.
-3. $ python localization.py
-4. Inspect the output files
+1. press ctrl+alt+t to open a terminal window
+2. $ cd ~
+3. open up localization.py in a text editor and change the variable named "base_dir" at the top of the file to point to where your input directory is.
+4. $ python localization.py
+5. Inspect the output files
