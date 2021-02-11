@@ -10,6 +10,8 @@ NOTES: Our scripts run on Python3 on Ubuntu and have not been tested with other 
 
 When you are running $ python, please make sure that $ which python, points to your python3 installation. If running $ which python points to /usr/bin/python27 or another path suffixed with a number containing "2", please try running the scripts with $ python3.
 
+The dependencies for these scripts are very stable and different versions of the dependencies should all work, within reason.
+
 # Hardware Assembly
 
 # Cloning the Repo
