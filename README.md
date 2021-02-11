@@ -32,4 +32,4 @@ When you are running $ python, please make sure that $ which python, points to y
 3. $ cd microspheres
 3. open up localization.py in a text editor and change the variable named "base_dir" at the top of the file to point to where your input directory is. You can do this with $ vim localization.py, $ nano localization.py, or with whichever other text editor you like using.
 4. $ python localization.py
-5. Inspect the output files
+5. inspect the output files
