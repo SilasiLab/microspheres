@@ -29,6 +29,7 @@ The dependencies for these scripts are very stable and different versions of the
 6. to take an image press spacebar
 
 # localization.py Instructions
+This script takes input data of the form specified [where is this form specified?] and outputs an xslx spreadsheet containing a worksheet for each region level. Each row of each worksheet represents one mouse, and the columns represent a specific region. Spreadsheet[worksheet (level num)][mouse num][region num] == the count of microspheres. 
 1. press ctrl+alt+t to open a terminal window
 2. $ cd ~
 3. $ cd microspheres
