@@ -6,6 +6,10 @@ To conduct our experiment we used a Raspberry Pi v3 to do our imaging. The instr
 
 After our imaging was complete we utilized a custom Python data processing script to map the microsphere locations in each mouses' brain to different regions as specified in the Allen Brain Atlas. The general usage of this custom script is explained below under localization.py instructions.
 
+NOTES: Our scripts run on Python3 on Ubuntu and have not been tested with other Python versions or operating systems. The localization.py script was written with cross-platform use in mind, but has only been tested on Ubuntu.
+
+When you are running $ python, please make sure that $ which python, points to your python3 installation. If running $ which python points to /usr/bin/python27 or another path suffixed with a number containing "2", please try running the scripts with $ python3.
+
 # Hardware Assembly
 
 # Cloning the Repo
@@ -25,6 +29,7 @@ After our imaging was complete we utilized a custom Python data processing scrip
 # localization.py Instructions
 1. press ctrl+alt+t to open a terminal window
 2. $ cd ~
-3. open up localization.py in a text editor and change the variable named "base_dir" at the top of the file to point to where your input directory is.
+3. $ cd microspheres
+3. open up localization.py in a text editor and change the variable named "base_dir" at the top of the file to point to where your input directory is. You can do this with $ vim localization.py, $ nano localization.py, or with whichever other text editor you like using.
 4. $ python localization.py
 5. Inspect the output files
