@@ -6,9 +6,9 @@ To conduct our experiment we used a Raspberry Pi to do our imaging and Ubuntu 16
 
 After our imaging was complete we utilized a custom Python data processing script to map the microsphere locations in each mouses' brain to different regions as specified in the Allen Brain Atlas. The general usage of this custom script is explained below under localization.py instructions.
 
-NOTES: Our scripts run on Python3 on Ubuntu and have not been tested with other Python versions or operating systems. The localization.py script was written with cross-platform use in mind, but has only been tested on Ubuntu.
+NOTES: Our scripts run on Python3 on Ubuntu/Windows 10. You need to have Pandas and Numpy in your environment and you may have to pip install an additional backend dependency to parse xlsx files such as xlrd or openpyxl.
 
-When you are running $ python, please make sure that $ which python, points to your python3 installation. If running $ which python points to /usr/bin/python27 or another path suffixed with a number containing "2", please try running the scripts with $ python3.
+When you are running $ python, please make sure that $ which python, points to your python3 installation (this command only works on Linux). If running $ which python points to /usr/bin/python27 or another path suffixed with a number containing "2", please try running the scripts with $ python3.
 
 The dependencies for these scripts are very stable and different versions of the dependencies should all work, within reason.
 
