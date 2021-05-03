@@ -13,6 +13,8 @@ When you are running $ python, please make sure that $ which python, points to y
 The dependencies for these scripts are very stable and different versions of the dependencies should all work, within reason.
 
 # Hardware Assembly
+Blockface imaging was performed with a Raspberry Pi Camera (8MP, Camera Board V2) equipped with a varifocal (6-22mm) CCTV lens (Binchil, model #149129). An orange gelatin filter was cut to fit on the back aperture of the lens, and a blue LED ring light (Adafruit, New York, USA; Flora NeoPixel Ring, P1463) was mounted below the lens on a custom 3D printed camera mount (attached to Vibratome). Images were acquired on a Raspberry Pi 3 microcomputer (Raspberry Pi Foundation, Cambridge, UK) using get_image.py.
+
 
 # Cloning the Repo
 1. make sure git is installed
