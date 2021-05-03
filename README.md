@@ -1,10 +1,10 @@
 # Microspheres
-Python scripts and hardware assembly instructions for reproducing microsphere experiments
+Python and ImageJ/Fiji scripts to capture blockface images, process images, and consolidate data for microsphere experiments. Registration of blockface images to the Allen Mouse Brain atlas is completed using the QuickNII tool (https://www.nitrc.org/projects/quicknii) and the registration of microspheres to defined brain structures is done using Nutil (https://www.nitrc.org/projects/nutil).
 
 # General Info
 To conduct our experiment we used a Raspberry Pi to do our imaging and Ubuntu 16.04LTS to do our data processing. The instructions for the setup of our hardware can be found below under Assembly, and the instructions for running our custom Python script for imaging can be found below under get_image.py instructions.
 
-After our imaging was complete we utilized a custom Python data processing script to map the microsphere locations in each mouses' brain to different regions as specified in the Allen Brain Atlas. The general usage of this custom script is explained below under localization.py instructions.
+After individual brains are processed using Nutil, we utilize a custom Python data processing script to map the microsphere locations in each mouses' brain to different levels of the Allen Brain Atlas. The general usage of this custom script is explained below under localization.py instructions.
 
 NOTES: Our scripts run on Python3 on Ubuntu/Windows 10. You need to have Pandas and Numpy in your environment and you may have to pip install an additional backend dependency to parse xlsx files such as xlrd or openpyxl.
 
@@ -32,7 +32,7 @@ This script takes an image with the CSI camera attached to the Raspberry Pi on u
 6. to take an image press spacebar
 
 # localization.py Instructions
-This script takes input data of the form specified [where is this form specified?] and outputs an xslx spreadsheet containing a worksheet for each region level. Each row of each worksheet represents one mouse, and the columns represent a specific region. Spreadsheet[worksheet (level num)][mouse num][region num] == the count of microspheres. 
+Following microsphere localization with Nutil, this script takes Nutil input data and outputs an xslx spreadsheet containing a worksheet for each region level. Each row of each worksheet represents one mouse, and the columns represent a specific region. Spreadsheet[worksheet (level num)][mouse num][region num] == the count of microspheres. 
 1. press ctrl+alt+t to open a terminal window
 2. $ cd ~
 3. $ cd microspheres
